@@ -1,5 +1,6 @@
 # so_long
 42 MiniGame Project - Make 2D minigame
+
 ![image](https://i.imgur.com/Yn8QPS9.png)
 # Compiling
 > Run ```make```
