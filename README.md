@@ -2,15 +2,15 @@
 42 MiniGame Project - Make 2D minigame
 
 ![image](https://i.imgur.com/Yn8QPS9.png)
-# Compiling
+## Compiling
 > Run ```make```
 
-# Running
+## Running
 ```
 ./so_long <map>
 ```
 
-# Maps
+## Maps
 > Maps in folder ```maps```
 
 > File map extension **must** be **```.ber```**
