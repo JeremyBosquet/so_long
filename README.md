@@ -6,14 +6,20 @@
 
 # Running
 ```
-./so_long <42.ber>
+./so_long <map>
 ```
 
 # Maps
+> Maps in folder ```maps```
+
+> File map extension **must** be **```.ber```**
+
 > In the projects there are already 3 maps
 * 42.ber    (biggest map)
 * map.ber   (medium map)
 * small.ber (smallest map)
+
+Exemple:
 ```
-./so_long <42.ber>
+./so_long maps/map.ber
 ```
