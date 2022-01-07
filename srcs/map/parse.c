@@ -6,7 +6,7 @@
 /*   By: jbosquet <jbosquet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 17:27:08 by jbosquet          #+#    #+#             */
-/*   Updated: 2022/01/05 18:58:41 by jbosquet         ###   ########.fr       */
+/*   Updated: 2022/01/07 15:46:00 by jbosquet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,11 @@ char	**ft_get_map(char *file)
 	int		fd;
 
 	i = 0;
+	if (open(file, O_RDONLY | O_DIRECTORY) > 0)
+		exit ((printf("Error\nLe fichier doit être un fichier.\n") * 0) + 1);
 	fd = open(file, O_RDONLY);
 	if (fd < 0)
-		return (NULL);
+		exit ((printf("Error\nLe fichier est introuvable.\n") * 0) + 1);
 	while (read(fd, buffer, 1) > 0)
 		i++;
 	close(fd);
